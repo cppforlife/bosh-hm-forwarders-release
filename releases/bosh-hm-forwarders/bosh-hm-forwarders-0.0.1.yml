@@ -1,0 +1,21 @@
+name: bosh-hm-forwarders
+version: 0.0.1
+commit_hash: 3fcbb9e
+uncommitted_changes: false
+jobs:
+- name: bosh-hm-forwarder-cloudwatch
+  version: 1da97d29a355277c9fea694cb87c2dcd6d24b205
+  fingerprint: 1da97d29a355277c9fea694cb87c2dcd6d24b205
+  sha1: 90cd5b6d16b0b9b8fcf9e5dddb92b6c4eb18c13c
+packages:
+- name: bosh-hm-forwarder-cloudwatch
+  version: 261d6008e68cca72c601c838a4f473fa40d547d7
+  fingerprint: 261d6008e68cca72c601c838a4f473fa40d547d7
+  sha1: 34d557bca502b8140d3d065c83fdb601d7ca71ad
+  dependencies:
+  - golang-1.8-linux
+- name: golang-1.8-linux
+  version: aaea538b3126b3daf615eacafd82d8b58114953e
+  fingerprint: aaea538b3126b3daf615eacafd82d8b58114953e
+  sha1: 08509ea827eb6bac2cb8c457d241e431d883469c
+  dependencies: []
