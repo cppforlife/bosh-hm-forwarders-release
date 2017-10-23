@@ -1,0 +1,23 @@
+---
+name: bosh-hm-forwarder-cloudwatch
+
+templates:
+  config.json.erb: config/config.json
+  forwarder:       bin/bosh-monitor/forwarder
+
+packages:
+- bosh-hm-forwarder-cloudwatch
+
+properties:
+  credentials_source:
+    description: "Source of AWS credentials"
+    default: "static"
+
+  access_key_id:
+    description: "Access Key ID (required if source is static)"
+  secret_access_key:
+    description: "Secret Access Key (required if source is static)"
+
+  region:
+    description: "AWS region"
+    default: "us-east-1"

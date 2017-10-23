@@ -1,0 +1,15 @@
+<%= 
+
+params = {
+  "CredentialsSource" => p("credentials_source"),
+  "Region" => p("region"),
+}
+
+if p("credentials_source") == "static"
+  params["AccessKeyID"] = p("access_key_id")
+  params["SecretAccessKey"] = p("secret_access_key")
+end
+
+JSON.dump(params)
+
+%>

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export GOOS=linux
+export GOARCH=amd64
+
+cd src/cloudwatch
+go fmt .
+go build -o cloudwatch .

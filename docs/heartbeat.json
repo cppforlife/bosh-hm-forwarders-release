@@ -1,0 +1,202 @@
+{
+  "id": "fc8f80d2-8113-499e-94cc-2684f239fb3c",
+  "kind": "heartbeat",
+  "timestamp": 1508737897,
+
+  "job": "zookeeper",
+  "index": "4",
+  "instance_id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+  "job_state": "running",
+  "deployment": "zookeeper",
+  "agent_id": "aff70e13-9714-44f5-91b7-8ca48d741fc0",
+
+  "teams": [],
+
+  "metrics": [
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "0.04",
+      "name": "system.load.1m"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "1.1",
+      "name": "system.cpu.user"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "1.3",
+      "name": "system.cpu.sys"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "0.1",
+      "name": "system.cpu.wait"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "44",
+      "name": "system.mem.percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "1777624",
+      "name": "system.mem.kb"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "16",
+      "name": "system.swap.percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "659356",
+      "name": "system.swap.kb"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "10",
+      "name": "system.disk.system.percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "0",
+      "name": "system.disk.system.inode_percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "34",
+      "name": "system.disk.ephemeral.percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "5",
+      "name": "system.disk.ephemeral.inode_percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "0",
+      "name": "system.disk.persistent.percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "0",
+      "name": "system.disk.persistent.inode_percent"
+    },
+    {
+      "tags": {
+        "id": "d3d2fb1b-1e68-4380-be46-b89e936d7a18",
+        "index": "4",
+        "job": "zookeeper"
+      },
+      "timestamp": 1508737897,
+      "value": "1",
+      "name": "system.healthy"
+    }
+  ],
+  
+  "vitals": {
+    "swap": {
+      "percent": "16",
+      "kb": "659356"
+    },
+    "mem": {
+      "percent": "44",
+      "kb": "1777624"
+    },
+    "load": [
+      "0.04",
+      "0.08",
+      "0.08"
+    ],
+    "disk": {
+      "system": {
+        "percent": "10",
+        "inode_percent": "0"
+      },
+      "persistent": {
+        "percent": "0",
+        "inode_percent": "0"
+      },
+      "ephemeral": {
+        "percent": "34",
+        "inode_percent": "5"
+      }
+    },
+    "cpu": {
+      "wait": "0.1",
+      "user": "1.1",
+      "sys": "1.3"
+    }
+  }
+}

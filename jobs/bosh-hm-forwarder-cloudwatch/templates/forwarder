@@ -1,0 +1,4 @@
+#!/bin/bash
+
+exec /var/vcap/packages/bosh-hm-forwarder-cloudwatch/bin/bosh-hm-forwarder-cloudwatch \
+  /var/vcap/jobs/bosh-hm-forwarder-cloudwatch/config/config.json

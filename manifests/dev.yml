@@ -1,0 +1,6 @@
+- type: replace
+  path: /releases/name=bosh-hm-forwarders?
+  value:
+    name: bosh-hm-forwarders
+    version: latest
+    url: file:///tmp/bosh-hm-forwarders
