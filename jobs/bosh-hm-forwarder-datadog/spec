@@ -1,0 +1,13 @@
+---
+name: bosh-hm-forwarder-datadog
+
+templates:
+  config.json.erb: config/config.json
+  forwarder:       bin/bosh-monitor/forwarder
+
+packages:
+- bosh-hm-forwarder-datadog
+
+properties:
+  api_key:
+    description: "Datadog API key"

@@ -2,7 +2,14 @@
 
 export GOOS=linux
 export GOARCH=amd64
+export GOPATH=$PWD
 
-cd src/cloudwatch
-go fmt .
-go build -o cloudwatch .
+pushd src/cloudwatch > /dev/null
+	go fmt .
+	go build -o cloudwatch .
+popd > /dev/null
+
+pushd src/datadog > /dev/null
+	go fmt .
+	go build -o datadog .
+popd > /dev/null

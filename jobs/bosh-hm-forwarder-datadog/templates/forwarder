@@ -1,0 +1,4 @@
+#!/bin/bash
+
+exec /var/vcap/packages/bosh-hm-forwarder-datadog/bin/bosh-hm-forwarder-datadog \
+  /var/vcap/jobs/bosh-hm-forwarder-datadog/config/config.json

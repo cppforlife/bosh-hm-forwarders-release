@@ -13,3 +13,6 @@ releases/**/*.tgz
 *#
 #*
 pkg
+
+src/cloudwatch/cloudwatch
+src/datadog/datadog

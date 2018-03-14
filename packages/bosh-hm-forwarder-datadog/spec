@@ -1,0 +1,8 @@
+---
+name: bosh-hm-forwarder-datadog
+
+dependencies:
+- golang-1.8-linux
+
+files:
+- datadog/**/*

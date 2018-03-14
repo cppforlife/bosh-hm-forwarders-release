@@ -1,0 +1,46 @@
+---
+name: bosh-hm
+
+releases:
+- name: bosh
+  version: latest
+
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: 3468.21
+
+update:
+  update_watch_time: 5000-30000
+  canary_watch_time: 5000-30000
+  canaries: 0
+  max_in_flight: "100%"
+
+instance_groups:
+- name: bosh
+  azs: [z1]
+  instances: 1
+  jobs:
+  - name: health_monitor
+    release: bosh
+    properties:
+      nats:
+        address: ((nats_address))
+        tls:
+          ca: ((nats_server_tls.ca))
+          health_monitor:
+            certificate: ((nats_clients_health_monitor_tls.certificate))
+            private_key: ((nats_clients_health_monitor_tls.private_key))
+      director:
+        address: ((director_address))
+      hm:
+        director_account:
+          user: hm
+          password: ((hm_password))
+          client_id: hm # for uaa
+          client_secret: ((hm_password))
+          ca_cert: ((director_ssl.ca))
+  stemcell: default
+  vm_type: default
+  networks:
+  - name: default
