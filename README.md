@@ -11,8 +11,8 @@ Standalone BOSH HM (on bosh-lite):
 
 ```
 $ bosh -n -d bosh-hm deploy manifests/hm.yml -o manifests/datadog.yml \
-	-v datadog_api_key=... \
-	-l ~/workspace/deployments/vbox/creds.yml \
-	-v director_address=10.254.50.4 \
-	-v nats_address=10.254.50.4
+  -v datadog_api_key=... \
+  -l ~/workspace/deployments/vbox/creds.yml \
+  -v director_address=10.254.50.4 \
+  -v nats_address=10.254.50.4
 ```
